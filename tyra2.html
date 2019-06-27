@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<style>
+* {box-sizing: border-box}
+
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 14px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#Comedy {background-color: green;}
+#Action {background-color: blue;}
+#Horror {background-color: purple;}
+#POPcorn QUIZ {background-color: pink;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('Comedy', this, 'green')">Comedy</button>
+<button class="tablink" onclick="openPage('Action', this, 'blue')">Action</button>
+<button class="tablink" onclick="openPage('Horror', this, 'purple')">Horror</button>
+<button class="tablink" onclick="openPage('POPcorn QUIZ', this, 'pink')">POPcorn QUIZ</button>
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Access the newest movie trailers for 2018-2019</p>
+  <!-- This puts a video into your webpage -->
+<iframe
+width="360" height="260" src="https://www.youtube.com/embed/wmiIUN-7qhE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<iframe width="360" height="260" src="https://www.youtube.com/embed/zRwBVYjUBOc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="260" src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="260" src="https://www.youtube.com/embed/Nt9L1jCKGnE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="260" src="https://www.youtube.com/embed/Raf9bVk75s8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="260" src="https://www.youtube.com/embed/mYocfuqu2A8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="260" src="https://www.youtube.com/embed/B-6Kz__Mpvg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="260" src="https://www.youtube.com/embed/ocWpGdITSR4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</video>
+</div>
+
+
+<div id="Comedy" class="tabcontent">
+  <h3>Comedy</h3>
+  <p>INSERT WORDS HERE TYRA</p>
+<iframe width="360" height="260" src="https://www.youtube.com/embed/BV-WEb2oxLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="260" src="https://www.youtube.com/embed/FvvZaBf9QQI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="260" src="https://www.youtube.com/embed/1roy4o4tqQM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="260" src="https://www.youtube.com/embed/IUfZq3DUd3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="260" src="https://www.youtube.com/embed/_BcYBFC6zfY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="260" src="https://www.youtube.com/embed/-Qv6p6pTz5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="260" src="https://www.youtube.com/embed/_j5hwooOHVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="260" src="https://www.youtube.com/embed/I-X5WnMzOvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+<div id="Action" class="tabcontent">
+  <h3>Action</h3>
+  <p>INSERT WORDS HERE TYRA</p>
+</div>
+
+<div id="Horror" class="tabcontent">
+  <h3>Horro</h3>
+  <p>INSERT WORDS HERE TYRA</p>
+</div>
+
+<div id="POPcorn QUIZ" class="tabcontent">
+  <h3>POPcorn QUIZ</h3>
+  <p>Test your Movie Knowledge</p>
+  <h3>Quiz on Important Facts</h3>
+<div class="popquiz">
+  <div id="popquiz"></div>
+</div>
+<button id="previous">Previous Question</button>
+<button id="next">Next Question</button>
+<button id="submit">Submit Quiz</button>
+<div id="results"></div>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+</body>
+</html>
